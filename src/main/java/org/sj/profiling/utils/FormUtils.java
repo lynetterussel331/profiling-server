@@ -95,7 +95,6 @@ public class FormUtils {
             element.setOptions(options);
             return "SELECT";
         } catch (ClassNotFoundException | IllegalAccessException | NoSuchFieldException e) {
-            log.info("Class not found: {}", id);
             return FormUtils.getElementType(field.getType().getSimpleName());
         }
     }
